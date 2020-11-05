@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: "Noto Sans TC",sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* preheader開始 */
+.nav {
+    background-color: #f6f6f6;
+    height: 28px;
+} 
+.nav ul{
+    font-size:14px;
+    float:right;
+}
+.nav li{
+    float:left;
+    margin-top: 6px;
+    
+}
+.nav li img{
+    float:left;
+    margin-right: 5px;
+}
+.nav li span{
+    float:left;
+}
+.nav li a{
+    display:block;
+    text-decoration:none;
+    
+}
+.facebook span{
+    color:#4460a0;
+    border-right:solid gray 1px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.twitter span{
+    color:#00aaec;
+    margin-right: 10px;
+}
+.nav li a:hover{
+    text-decoration: underline;
+}
+
+
+/* preheader結束 */
+/* header開始 */
+.header{
+    width: 1000px;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.header h1 a{
+    background: url(images/head-logo.png);
+    text-indent:101%;
+    overflow: hidden;
+    white-space:nowrap;
+    width: 171px;
+    height: 36px;
+    display: block;
+}
+
+.navbar{
+    width: 275px;
+    display:flex;
+    justify-content: space-between;
+}
+.navbar li{
+    font-size: 16px;
+}
+.navbar li a{
+    display: block;
+    text-decoration: none;
+    color:#42d3a9;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar li:hover{
+    border-bottom:2px solid #42d3a9;
+}
+/* header結束 */
+/* banner開始 */
+.banner{
+    background:url(images/headimage.gif) no-repeat center;
+    height: 346px;
+    width: 1000px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner-text{
+    background:rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    color:#fff;
+    font-size:37px;
+    line-height:50px;
+    letter-spacing: 1px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+}
+/* banner結束 */
+/* box開始 */
+.box{
+    padding: 20px 20px;
+    display:flex;
+    justify-content:space-between;
+    margin-top: 65px;
+}
+.box-content{
+    box-sizing: border-box;
+    width: 303px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 3px#d6d6d6 ;
+}
+.box-img{
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-content h3{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.box-content p,ul{
+    font-size:14px;
+    text-align: left;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+.box-content ul{
+    list-style: disc;
+    text-align: left;
+    padding-left: 20px;
+}
+/* box結束 */
+/* 表格開始 */
+.compare{
+    width: 840px;
+    margin: 0 auto;
+}
+.compare caption{
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 47px;
+}
+.compare tr th,td{
+    font-size:15px;
+    line-height: 36px;
+    padding-left: 20px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+.compare tr th{
+    background-color: #f7f7f7;
+    font-weight:bold;
+    text-align: left;
+}
+.green{
+    color:#42b392;
+}
+/* 表格結束 */
+/* form開始 */
+.message{
+    background: url(images/message.gif) repeat-x;
+    width: 1000px;
+    height: 405px;
+    padding: 33px 20px;
+    box-sizing: border-box;
+    margin-top: 60px;
+}
+.message h4{
+    color:#fff;
+    font-size: 23px;
+    text-align: center;
+    line-height: 36px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+}
+.message-box{
+    background: #fff;
+    width: 461px;
+    height: 245px;
+    float: left;
+}
+
+.message form h5{
+    color:#fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+.message form p{
+    padding-bottom: 10px;
+}
+.message form input[type=text]{
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 24px;
+    width: 461px;
+    padding: 2px 12px;
+    border-radius: 4px;
+    border: none;;
+}
+.message form input[type=text]:focus{
+    border: 1px solid #000;
+}
+/* *{
+    outline: 1px solid #000000;
+} */
+.message form{
+    position: relative;
+}
+.message form input[type=submit]{
+    outline: 0;
+    background-color: #00cc99;
+    color:#fff;
+    width: 70px;
+    height: 33px;
+    line-height: 33px;
+    /* submit位置固定在右下 */
+    position: absolute;
+    right:0;
+    bottom:0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* input:submit 滑鼠效果
+改寫自https://purecss.io/buttons/ */
+.message form input[type=submit]:hover,
+.message form input[type=submit]:focus {
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.message form input[type=submit]:focus {
+    outline: 0;
+}
+.message form input[type=submit]:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000;
+}
+/* 改寫自https://purecss.io/buttons/ */
+
+/* form結束 */
+.footer{
+    margin: 25px 20px;
+    height: 50px;
+}
+.footer img a{
+    float:left;
+    display: block;
+}
+.footer ul{
+    float:right;
+}
+.footer li a{
+    text-decoration: none;
+    color:#e3458a;
+    letter-spacing: 0;
+}
+.footer li a:hover{
+    text-decoration: underline;
+}
