@@ -103,7 +103,7 @@ body{
     padding-top: 10px;
 }
 .header h1 a{
-    background: url(images/head-logo.png);
+    background: url(../images/head-logo.png);
     text-indent:101%;
     overflow: hidden;
     white-space:nowrap;
@@ -135,7 +135,7 @@ body{
 /* header結束 */
 /* banner開始 */
 .banner{
-    background:url(images/headimage.gif) no-repeat center;
+    background:url(../images/headimage.gif) no-repeat center;
     height: 346px;
     width: 1000px;
     display:flex;
@@ -219,7 +219,7 @@ body{
 /* 表格結束 */
 /* form開始 */
 .message{
-    background: url(images/message.gif) repeat-x;
+    background: url(../images/message.gif) repeat-x;
     width: 1000px;
     height: 405px;
     padding: 33px 20px;
