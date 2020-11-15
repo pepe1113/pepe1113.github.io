@@ -56,7 +56,7 @@ body{
 /* preheader開始 */
 .nav {
     background-color: #f6f6f6;
-    height: 28px;
+    
 } 
 .nav ul{
     font-size:14px;
@@ -77,7 +77,6 @@ body{
 .nav li a{
     display:block;
     text-decoration:none;
-    
 }
 .facebook span{
     color:#4460a0;
@@ -97,19 +96,19 @@ body{
 /* preheader結束 */
 /* header開始 */
 .header{
-    width: 1000px;
     display:flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 .header h1 a{
-    background: url(../images/head-logo.png);
+    background: url(../images/head-logo.png) no-repeat;
     text-indent:101%;
     overflow: hidden;
     white-space:nowrap;
     width: 171px;
-    height: 36px;
+    padding: 18px 0;
     display: block;
+    height: 16px;
 }
 
 .navbar{
@@ -137,7 +136,7 @@ body{
 .banner{
     background:url(../images/headimage.gif) no-repeat center;
     height: 346px;
-    width: 1000px;
+    
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -201,7 +200,7 @@ body{
     margin-bottom: 30px;
     margin-top: 47px;
 }
-.compare tr th,td{
+.compare tr th,.compare tr td{
     font-size:15px;
     line-height: 36px;
     padding-left: 20px;
@@ -220,8 +219,7 @@ body{
 /* form開始 */
 .message{
     background: url(../images/message.gif) repeat-x;
-    width: 1000px;
-    height: 405px;
+    
     padding: 33px 20px;
     box-sizing: border-box;
     margin-top: 60px;
@@ -234,24 +232,17 @@ body{
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    
     padding-top: 26px;
 }
-.message-box{
-    background: #fff;
-    width: 461px;
-    height: 245px;
-    float: left;
-}
 
-.message form h5{
+
+.message form label{
     color:#fff;
     font-size: 16px;
     line-height: 24px;
 }
-.message form p{
-    padding-bottom: 10px;
-}
+
 .message form input[type=text]{
     outline: 0;
     box-sizing: border-box;
@@ -261,6 +252,16 @@ body{
     padding: 2px 12px;
     border-radius: 4px;
     border: none;;
+    margin-bottom: 10px;
+}
+
+.message form textarea{
+    margin-right: 35px;
+}
+.message form textarea:focus{
+    outline:0;
+    box-shadow: inset;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .message form input[type=text]:focus{
     border: 1px solid #000;
@@ -268,9 +269,7 @@ body{
 /* *{
     outline: 1px solid #000000;
 } */
-.message form{
-    position: relative;
-}
+
 .message form input[type=submit]{
     outline: 0;
     background-color: #00cc99;
@@ -278,13 +277,13 @@ body{
     width: 70px;
     height: 33px;
     line-height: 33px;
-    /* submit位置固定在右下 */
-    position: absolute;
     right:0;
     bottom:0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    float: right;
+    margin-top: 30px;
 }
 
 /* input:submit 滑鼠效果
@@ -305,7 +304,7 @@ body{
 /* form結束 */
 .footer{
     margin: 25px 20px;
-    height: 50px;
+    
 }
 .footer img a{
     float:left;
@@ -321,4 +320,7 @@ body{
 }
 .footer li a:hover{
     text-decoration: underline;
+}
+.clearfix{
+    clear: both;
 }
