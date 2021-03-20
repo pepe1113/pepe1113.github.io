@@ -47,11 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+*{
+   box-sizing: border-box; 
+}
 body{
     font-family: "Noto Sans TC",sans-serif;
     width: 1000px;
     margin: 0 auto;
-    box-sizing: border-box;
+
 }
 /* preheader開始 */
 .nav {
@@ -59,24 +62,22 @@ body{
     
 } 
 .nav ul{
-    font-size:14px;
+    font-size:15px;
     float:right;
 }
 .nav li{
     float:left;
     margin-top: 6px;
-    
 }
 .nav li img{
-    float:left;
-    margin-right: 5px;
+    margin-right: 4px;
 }
-.nav li span{
-    float:left;
-}
+
 .nav li a{
     display:block;
     text-decoration:none;
+    display: flex;
+    align-items: center;
 }
 .facebook span{
     color:#4460a0;
@@ -84,6 +85,7 @@ body{
     padding-right: 10px;
     margin-right: 10px;
 }
+
 .twitter span{
     color:#00aaec;
     margin-right: 10px;
@@ -98,48 +100,61 @@ body{
 .header{
     display:flex;
     justify-content: space-between;
-    padding-top: 10px;
+    
 }
 .header h1 a{
     background: url(../images/head-logo.png) no-repeat;
     text-indent:101%;
     overflow: hidden;
     white-space:nowrap;
+    background-position: center;
     width: 171px;
-    padding: 18px 0;
+    line-height: 64px;
     display: block;
-    height: 16px;
+  
 }
 
 .navbar{
-    width: 275px;
+    width: 300px;
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
 }
-.navbar li{
-    font-size: 16px;
-}
+
 .navbar li a{
+    font-size: 16px;
     display: block;
     text-decoration: none;
     color:#42d3a9;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding:20px 10px;
+    transition: 0.4s;
 }
-.navbar li:hover{
-    border-bottom:2px solid #42d3a9;
+.navbar li a:hover{
+    background-color: #42d3a9;
+    color:#fff;
 }
+/* 下拉式選單 */
+.dropdownList{
+    position: absolute;
+    z-index: 10000;
+    background-color: #fff;
+    box-shadow: rgba(107, 107, 107, 0.4) 0px 7px 10px 0px;
+    display: none;
+}
+.dropdownList li a{
+    padding:20px 15px;
+}
+.dropdownClick.active{
+    background-color: #42d3a9;
+    color:#fff;
+}
+
 /* header結束 */
 /* banner開始 */
 .banner{
-    background:url(../images/headimage.gif) no-repeat center;
     height: 346px;
-    
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
+    width: 1000px;
+    position: relative;
 }
 .banner-text{
     background:rgba(0, 0, 0, 0.2);
@@ -148,9 +163,21 @@ body{
     font-size:37px;
     line-height:50px;
     letter-spacing: 1px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 20px;
+    padding:123px 0px 123px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+/* swiper */
+.swiper-container{
+    height: 346px;
+    width: 1000px;
+    
+}
+.swiper-container img{
+    width: 100%;
 }
 /* banner結束 */
 /* box開始 */
@@ -165,7 +192,10 @@ body{
     width: 303px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 3px#d6d6d6 ;
+    box-shadow: 0 4px 3px#d6d6d6
+}
+.box-content:hover{
+    box-shadow: 0 4px 5px rgb(83, 83, 83);
 }
 .box-img{
     height: 160px;
@@ -232,7 +262,6 @@ body{
 }
 .row{
     display: flex;
-    
     padding-top: 26px;
 }
 
@@ -323,4 +352,11 @@ body{
 }
 .clearfix{
     clear: both;
+}
+/* top */
+.topbtn img{
+    width: 70px;
+    position: fixed;
+    right: 0;
+    bottom:0;
 }
