@@ -1,362 +1,360 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+* {
+    box-sizing: border-box;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-*{
-   box-sizing: border-box; 
-}
-body{
-    font-family: "Noto Sans TC",sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     width: 1000px;
     margin: 0 auto;
-
 }
+
+
 /* preheader開始 */
+
 .nav {
     background-color: #f6f6f6;
-    
-} 
-.nav ul{
-    font-size:15px;
-    float:right;
 }
-.nav li{
-    float:left;
+
+.nav ul {
+    font-size: 15px;
+    float: right;
+}
+
+.nav li {
+    float: left;
     margin-top: 6px;
 }
-.nav li img{
+
+.nav li img {
     margin-right: 4px;
 }
 
-.nav li a{
-    display:block;
-    text-decoration:none;
+.nav li a {
+    text-decoration: none;
     display: flex;
     align-items: center;
 }
-.facebook span{
-    color:#4460a0;
-    border-right:solid gray 1px;
+
+.facebook span {
+    color: #4460a0;
+    border-right: solid gray 1px;
     padding-right: 10px;
     margin-right: 10px;
 }
 
-.twitter span{
-    color:#00aaec;
+.twitter span {
+    color: #00aaec;
     margin-right: 10px;
 }
-.nav li a:hover{
-    text-decoration: underline;
+
+.nav li a:hover {
+    filter: opacity(.6);
 }
 
 
 /* preheader結束 */
+
+
 /* header開始 */
-.header{
-    display:flex;
+
+.header {
+    display: flex;
     justify-content: space-between;
-    
 }
-.header h1 a{
+
+.header h1 a {
     background: url(../images/head-logo.png) no-repeat;
-    text-indent:101%;
+    text-indent: 101%;
     overflow: hidden;
-    white-space:nowrap;
+    white-space: nowrap;
     background-position: center;
     width: 171px;
     line-height: 64px;
     display: block;
-  
 }
 
-.navbar{
+.navbar {
     width: 300px;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     position: relative;
 }
 
-.navbar li a{
+.navbar li a {
     font-size: 16px;
-    display: block;
     text-decoration: none;
-    color:#42d3a9;
-    padding:20px 10px;
+    color: #42d3a9;
+    padding: 20px 10px;
     transition: 0.4s;
+    display: block;
 }
-.navbar li a:hover{
+
+.navbar li a:hover {
     background-color: #42d3a9;
-    color:#fff;
+    color: #fff;
 }
+
+
 /* 下拉式選單 */
-.dropdownList{
+
+.dropdownList {
     position: absolute;
-    z-index: 10000;
+    z-index: 10;
     background-color: #fff;
     box-shadow: rgba(107, 107, 107, 0.4) 0px 7px 10px 0px;
     display: none;
 }
-.dropdownList li a{
-    padding:20px 15px;
-}
-.dropdownClick.active{
-    background-color: #42d3a9;
-    color:#fff;
+
+.dropdownList li a {
+    padding: 20px 15px;
 }
 
+.dropdownClick.active {
+    background-color: #42d3a9;
+    color: #fff;
+}
+
+
 /* header結束 */
+
+
 /* banner開始 */
-.banner{
+
+.banner {
     height: 346px;
-    width: 1000px;
     position: relative;
 }
-.banner-text{
-    background:rgba(0, 0, 0, 0.2);
-    width: 1000px;
-    color:#fff;
-    font-size:37px;
-    line-height:50px;
-    letter-spacing: 1px;
-    padding:123px 0px 123px 30px;
+
+.banner-text {
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 37px;
+    line-height: 50px;
     position: absolute;
     top: 0;
-    left: 0;
+    padding-left: 5%;
+    padding-top: 12%;
     z-index: 1;
-    
 }
+
+
 /* swiper */
-.swiper-container{
+
+.swiper-container {
     height: 346px;
-    width: 1000px;
-    
 }
-.swiper-container img{
+
+.swiper-container img {
     width: 100%;
 }
+
+
 /* banner結束 */
+
+
 /* box開始 */
-.box{
-    padding: 20px 20px;
-    display:flex;
-    justify-content:space-between;
+
+.box {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     margin-top: 65px;
 }
-.box-content{
+
+.box-content {
     box-sizing: border-box;
     width: 303px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 3px#d6d6d6
 }
-.box-content:hover{
+
+.box-content:hover {
     box-shadow: 0 4px 5px rgb(83, 83, 83);
 }
-.box-img{
+
+.box-img {
     height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.box-content h3{
+
+.box-content h3 {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
 }
-.box-content p,ul{
-    font-size:14px;
+
+.box-content p,
+ul {
+    font-size: 14px;
     text-align: left;
     letter-spacing: 0.8px;
     line-height: 1.5;
 }
-.box-content ul{
+
+.box-content ul {
     list-style: disc;
     text-align: left;
     padding-left: 20px;
 }
+
+
 /* box結束 */
+
+
 /* 表格開始 */
-.compare{
+
+.compare {
     width: 840px;
     margin: 0 auto;
 }
-.compare caption{
+
+.compare caption {
     font-size: 25px;
     margin-bottom: 30px;
     margin-top: 47px;
 }
-.compare tr th,.compare tr td{
-    font-size:15px;
+
+.compare tr th,
+.compare tr td {
+    font-size: 15px;
     line-height: 36px;
     padding-left: 20px;
     border-top: 1px solid #d6d6d6;
     border-bottom: 1px solid #d6d6d6;
 }
-.compare tr th{
+
+.compare tr th {
     background-color: #f7f7f7;
-    font-weight:bold;
+    font-weight: bold;
     text-align: left;
 }
-.green{
-    color:#42b392;
+
+.green {
+    color: #42b392;
 }
+
+
 /* 表格結束 */
+
+
 /* form開始 */
-.message{
+
+.message {
     background: url(../images/message.gif) repeat-x;
-    
     padding: 33px 20px;
-    box-sizing: border-box;
     margin-top: 60px;
 }
-.message h4{
-    color:#fff;
+
+.message h4 {
+    color: #fff;
     font-size: 23px;
     text-align: center;
     line-height: 36px;
 }
-.row{
+
+.message-form {
     display: flex;
+    justify-content: space-around;
     padding-top: 26px;
 }
 
+.form-contact {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
 
-.message form label{
-    color:#fff;
+.message-form label {
+    display: block;
+    color: #fff;
     font-size: 16px;
     line-height: 24px;
 }
 
-.message form input[type=text]{
+.message-form input {
     outline: 0;
-    box-sizing: border-box;
-    font-size: 14px;
-    line-height: 24px;
-    width: 461px;
-    padding: 2px 12px;
     border-radius: 4px;
-    border: none;;
+    border: none;
+}
+
+.message-form input[type=text] {
+    font-size: 14px;
+    width: 100%;
+    padding: 6px 12px;
     margin-bottom: 10px;
 }
 
-.message form textarea{
-    margin-right: 35px;
-}
-.message form textarea:focus{
-    outline:0;
-    box-shadow: inset;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.message form input[type=text]:focus{
+.message-form input[type=text]:focus {
     border: 1px solid #000;
 }
-/* *{
-    outline: 1px solid #000000;
-} */
 
-.message form input[type=submit]{
-    outline: 0;
+.message-form .form-btn {
+    display: block;
     background-color: #00cc99;
-    color:#fff;
-    width: 70px;
-    height: 33px;
-    line-height: 33px;
-    right:0;
-    bottom:0;
-    border: none;
-    border-radius: 4px;
+    color: #fff;
+    padding: 11px 25px;
+    margin-top: 20px;
     cursor: pointer;
-    float: right;
-    margin-top: 30px;
+    align-self: flex-end;
 }
 
-/* input:submit 滑鼠效果
-改寫自https://purecss.io/buttons/ */
-.message form input[type=submit]:hover,
-.message form input[type=submit]:focus {
-    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+.message .form-btn:hover,
+.message .form-btn:focus {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
 }
-.message form input[type=submit]:focus {
+
+.message-form textarea {
     outline: 0;
+    border: none;
+    width: 45%;
+    border-radius: 4px;
 }
-.message form input[type=submit]:active {
-    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
-    border-color: #000;
+
+.message-form textarea:focus {
+    box-shadow: inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-/* 改寫自https://purecss.io/buttons/ */
+
 
 /* form結束 */
-.footer{
+
+.footer {
     margin: 25px 20px;
-    
 }
-.footer img a{
-    float:left;
+
+.footer img a {
+    float: left;
     display: block;
 }
-.footer ul{
-    float:right;
+
+.footer ul {
+    float: right;
 }
-.footer li a{
+
+.footer li a {
     text-decoration: none;
-    color:#e3458a;
+    color: #e3458a;
     letter-spacing: 0;
 }
-.footer li a:hover{
+
+.footer li a:hover {
     text-decoration: underline;
 }
-.clearfix{
+
+.clearfix {
     clear: both;
 }
+
+
 /* top */
-.topbtn img{
+
+.topbtn img {
     width: 70px;
     position: fixed;
     right: 0;
-    bottom:0;
+    bottom: 0;
 }

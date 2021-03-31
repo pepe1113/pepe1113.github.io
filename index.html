@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery最終作業</title>
-    
     <script type="text/javascript" src=""></script>
-
     <meta name="description" content="這裡是六角學院課程的最終作業網站">
     <meta name="keywords" content="六角學院、HTML、CSS、工程師轉職、自學程式、code、線上課程、前端、前端工程師">
 
@@ -23,14 +21,12 @@
     <!-- facebook meta end -->
 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- lightbox2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body>
@@ -38,7 +34,7 @@
         <ul>
             <li class="facebook">
                 <a href="#">
-                    <img src="images/fb.jpg" alt="粉絲團"><span>粉絲團  </span>
+                    <img src="images/fb.jpg" alt="粉絲團"><span>粉絲團</span>
                 </a>
             </li>
             <li class="twitter">
@@ -75,35 +71,31 @@
                 </ul>
             </li>
         </ul>
-
     </div>
 
 
     <!-- banner start -->
     <div class="banner">
-        
+
         <div class="swiper-container">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="images/headimage.gif">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1576936422505-18d321d54d40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-            </div>
+                <div class="swiper-slide">
+                    <img src="images/headimage.gif">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1576936422505-18d321d54d40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+                </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
-            <div class="banner-text">
-                <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
-            </div>
+            <h2 class="banner-text">六角學院<br>讓您奠定良好的前端基礎</h2>
         </div>
-        
     </div>
     <!-- banner end -->
 
@@ -122,7 +114,7 @@
         <li class="box-content">
             <div class="box-img">
                 <a href="images/box2.gif" data-lightbox="響應式網站設計" data-title="響應式網站設計" data-alt="響應式網站設計">
-                <img src="images/box2.gif" alt="響應式網站設計">
+                    <img src="images/box2.gif" alt="響應式網站設計">
                 </a>
             </div>
 
@@ -132,7 +124,7 @@
         <li class="box-content">
             <div class="box-img">
                 <a href="images/box3.gif" data-lightbox="jQuery實戰教學" data-title="jQuery實戰教學" data-alt="jQuery實戰教學"><img src="images/box3.gif" alt="jQuery實戰教學"></a>
-                
+
             </div>
 
             <h3>jQuery實戰教學</h3>
@@ -197,27 +189,20 @@
 
     <!-- 收集資料 start -->
     <div class="message">
-        <h4>對我們課程有興趣嗎？</h4>
-        <h4>歡迎留下您的資料</h4>
-        <div class="row">
-            <form action="projrct-final.html">
-                <textarea name="text" id="text" cols="60" rows="16"></textarea>
-            </form>
-            <form action="projrct-final.html">
+        <h4>對我們課程有興趣嗎？<br> 歡迎留下您的資料</h4>
+        <form class="message-form" action="projrct-final.html">
+            <textarea name="text" id="text" cols="60" rows="16"></textarea>
+            <div class="form-contact">
                 <label for="person">姓名</label>
                 <input type="text" id="person" placeholder="六角講師" name="person" required>
-                </br>
                 <label for="phone">電話</label>
-
                 <input type="text" id="phone" placeholder="0912345678" name="phone" required>
-                </br>
                 <label for="mail">信箱</label>
-
                 <input type="text" id="mail" placeholder="hexschool@mail.com" name="mail" required>
-                <input type="submit" value="送出">
-            </form>
-            <div class="clearfix"></div>
-        </div>
+                <input type="submit" value="送出" class="form-btn">
+            </div>
+
+        </form>
     </div>
     <!-- 收集資料 end -->
 
@@ -229,7 +214,7 @@
                 <a href="mailto:hexschool@gamil.com">hexschool@gamil.com</a>
             </li>
             <li>電話：
-                <a href="#">0999123456</a>
+                <a href="tel:0999123456">0999123456</a>
             </li>
         </ul>
         <div class="clearfix"></div>
@@ -240,18 +225,12 @@
         <a href=""><img src="images/up-arrow.png" alt=""></a>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-<!-- swiper -->
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- lightbox2 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-<script src="js/all.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
